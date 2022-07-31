@@ -43,7 +43,7 @@ New account successfully created!
 ```
 
 ## Create Opening :x:
-> Ticket : https://github.com/Joystream/pioneer/issues/3433
+> Ticket : https://github.com/Joystream/joystream/issues/4101
 
 ```
 root@vmi616941:~/joystream# yarn joystream-cli working-groups:createOpening -g=storageProviders
