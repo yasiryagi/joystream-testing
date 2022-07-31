@@ -180,7 +180,7 @@ Done in 10.58s.
 
 
 
-## Update/set the dynamic bag policy
+## Update/set the dynamic bag policy :white_check_mark:
 ```
 root@vmi616941:~/joystream# yarn storage-node leader:update-dynamic-bag-policy -t Channel -n 2 -u wss://54.172.154.45.nip.io/ws-rpc -p *********  -k ~/keys/storage-role-key.json
 yarn run v1.22.15
@@ -193,7 +193,7 @@ $ /root/joystream/node_modules/.bin/storage-node leader:update-dynamic-bag-polic
 Done in 12.10s.
 ```
 
-## Update the bag limit
+## Update the bag limit :white_check_mark:
 ```
 root@vmi616941:~/joystream# yarn storage-node leader:update-bag-limit -l 10 -u wss://54.172.154.45.nip.io/ws-rpc -p *********  -k ~/keys/storage-role-key.json
 yarn run v1.22.15
@@ -221,7 +221,7 @@ Done in 16.48s.
 
 # WORKERS
 
-## Creaye a transaction keys
+## Creaye a transaction keys :white_check_mark:
 
 ```
 root@vmi616941:~/joystream# yarn joystream-cli account:create
