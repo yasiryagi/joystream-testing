@@ -218,7 +218,7 @@ Done in 16.48s.
 
 # Worker
 
-## Creaye a transaction keys :white_check_mark:
+## Create a transaction keys :white_check_mark:
 
 ```
 root@vmi616941:~/joystream# yarn joystream-cli account:create
@@ -250,7 +250,7 @@ $ /root/joystream/node_modules/.bin/storage-node operator:accept-invitation -i 5
 Done in 12.49s.
 root@vmi616941:~/joystream# yarn run storage-node operator:set-metadata -i 5 -w 1 -j metadata.json -u wss://54.172.154.45.nip.io/ws-rpc -p *********  -k ~/keys/storage-role-key.json
 yarn run v1.22.15
-
+```
 
 ## Set Metadata :white_check_mark:
 
