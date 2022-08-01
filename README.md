@@ -312,3 +312,40 @@ INFO: Processing block: 0000001300-5dbf9, events count: 1
 INFO: Processing block: 0000001301-15ac8, events count: 1
 INFO: Last block: 1301  : 67633 blocks behind
 ```
+
+
+## Storage Node :white_check_mark:
+
+```
+root@vmi616941:~# curl https://joystream.yyagi.cloud/storage/api/v1/state/data
+{"objectNumber":1,"totalSize":1880088,"tempDownloads":0,"tempDirSize":4096}
+```
+
+
+```
+- Logs begin at Wed 2022-07-20 00:38:58 CEST, end at Mon 2022-08-01 17:27:35 CEST. --
+Jul 31 18:59:18 vmi616941.contaboserver.net systemd[1]: Started Joystream Storage Node.
+Jul 31 18:59:19 vmi616941.contaboserver.net yarn[3557083]: yarn run v1.22.15
+Jul 31 18:59:19 vmi616941.contaboserver.net yarn[3557083]: $ /root/joystream/node_modules/.bin/storage-node server -u wss://54.172.154.45.nip.io/ws-rpc -w 1 -o 3333 -l /root/.joystream-storage/log/ -d />
+Jul 31 18:59:24 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:24:5924 info: Initialized runtime connection: wss://54.172.154.45.nip.io/ws-rpc
+Jul 31 18:59:26 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:26:5926 info: Waiting for chain to be synced before proceeding.
+Jul 31 18:59:26 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:26:5926 info: Removing temp directory ...
+Jul 31 18:59:26 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:26:5926 info: Creating temp directory ...
+Jul 31 18:59:26 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:26:5926 debug: Local ID cache loaded.
+Jul 31 18:59:27 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:27:5927 info: Query node endpoint set: https://54.172.154.45.nip.io/query-node/server/graphql
+Jul 31 18:59:27 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:27:5927 info: Synchronization enabled.
+Jul 31 18:59:27 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:27:5927 debug: Max file size runtime parameter: 10737418240
+Jul 31 18:59:27 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:27:5927 info: Listening on http://localhost:3333
+Jul 31 18:59:27 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 18:59:27:5927 info: Sync paused for 1 minute(s).
+Jul 31 19:00:27 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:27:027 info: Resume syncing....
+Jul 31 19:00:27 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:27:027 info: Started syncing...
+Jul 31 19:00:27 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:27:027 debug: Query - storageBucketsConnection
+Jul 31 19:00:28 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:28:028 debug: Sync - getting all storage buckets: offset = 0, limit = 1000
+Jul 31 19:00:28 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:28:028 debug: Query - storageBagsConnection
+Jul 31 19:00:29 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:29:029 debug: Query - storageDataObjectsConnection
+Jul 31 19:00:29 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:29:029 debug: Sync - new objects: 0
+Jul 31 19:00:29 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:29:029 debug: Sync - obsolete objects: 0
+Jul 31 19:00:29 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:29:029 debug: Sync - started processing...
+Jul 31 19:00:29 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:29:029 info: Sync ended.
+Jul 31 19:00:29 vmi616941.contaboserver.net yarn[3557106]: 2022-07-31 19:00:29:029 info: Sync paused for 1 minute(s).
+```
