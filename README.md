@@ -42,8 +42,7 @@ Initializing the api connection (wss://54.172.154.45.nip.io/ws-rpc)...... done
 New account successfully created!
 ```
 
-## Create Opening :x:
-> Ticket : https://github.com/Joystream/joystream/issues/4101
+## Create Opening :white_check_mark:
 
 ```
 root@vmi616941:~/joystream# yarn joystream-cli working-groups:createOpening -g=storageProviders
@@ -59,11 +58,10 @@ Current Group: storageProviders
  hiringLimit 4
  Do you want to provide optional title? Yes
  title Exeperienced Storage Worker
- Do you want to provide optional shortDescription? Yes
- shortDescription Professional operation of a storage node.
+ Do you want to provide optional shortDescription? No
  Do you want to provide optional description? No
  Do you want to provide optional applicationFormQuestions? No
- stakingPolicy.amount 5000
+ stakingPolicy.amount 4000
  stakingPolicy.unstakingPeriod 43200
  Do you want to provide optional rewardPerBlock? Yes
  rewardPerBlock 1
@@ -72,9 +70,8 @@ You need to increase your lead stake to 50.7612 kJOY in order to create a new op
     applicationDetails: "Exeperienced Storage Worker",
     hiringLimit: 4,
     title: "Exeperienced Storage Worker",
-    shortDescription: "Professional operation of a storage node.",
     stakingPolicy: {
-        amount: 5000,
+        amount: 4000,
         unstakingPeriod: 43200
     },
     rewardPerBlock: 1
@@ -85,22 +82,63 @@ You need to increase your lead stake to 50.7612 kJOY in order to create a new op
 Sending storageWorkingGroup.addOpening extrinsic from storage-role-key...
 Tx params: [
   [
-    '0x0a2950726f66657373696f6e616c206f7065726174696f6e206f6620612073746f72616765206e6f64652e18042a1b45786570657269656e6365642053746f7261676520576f726b65723a1b45786570657269656e6365642053746f7261676520576f726b6572',
+    '0x18042a1b45786570657269656e6365642053746f7261676520576f726b65723a1b45786570657269656e6365642053746f7261676520576f726b6572',
     'Regular',
-    { stakeAmount: '5,000', leavingUnstakingPeriod: '43,200' },
+    { stakeAmount: '4,000', leavingUnstakingPeriod: '43,200' },
     '1'
   ]
 ]
-? Tx fee of 173.1577 mJOY will be deduced from you account, do you confirm the transfer? Yes
+? Tx fee of 145.9880 mJOY will be deduced from you account, do you confirm the transfer? Yes
  ›   Warning: Extrinsic failed! Extrinsic execution error: BelowMinimumStakes (Staking less than the lower bound.)
-? Try again with remembered input? No
-Done in 169.78s.
+? Try again with remembered input? Yes
+ Do you want to provide optional applicationDetails? Yes
+ applicationDetails Exeperienced Storage Worker
+ Do you want to provide optional expectedEndingTimestamp? No
+ Do you want to provide optional hiringLimit? Yes
+ hiringLimit 4
+ Do you want to provide optional title? Yes
+ title Exeperienced Storage Worker
+ Do you want to provide optional shortDescription? Yes
+ shortDescription Professional operation of a storage node.
+ Do you want to provide optional description? No
+ Do you want to provide optional applicationFormQuestions? No
+ stakingPolicy.amount 3333333333333
+ stakingPolicy.unstakingPeriod 43200
+ Do you want to provide optional rewardPerBlock? Yes
+ rewardPerBlock 1
+You need to increase your lead stake to 50.7612 kJOY in order to create a new opening.
+{
+    applicationDetails: "Exeperienced Storage Worker",
+    hiringLimit: 4,
+    title: "Exeperienced Storage Worker",
+    shortDescription: "Professional operation of a storage node.",
+    stakingPolicy: {
+        amount: 3333333333333,
+        unstakingPeriod: 43200
+    },
+    rewardPerBlock: 1
+}
+? Do you confirm the provided input? Yes
+
+Sending storageWorkingGroup.addOpening extrinsic from storage-role-key...
+Tx params: [
+  [
+    '0x0a2950726f66657373696f6e616c206f7065726174696f6e206f6620612073746f72616765206e6f64652e18042a1b45786570657269656e6365642053746f7261676520576f726b65723a1b45786570657269656e6365642053746f7261676520576f726b6572',
+    'Regular',
+    {
+      stakeAmount: '3,333,333,333,333',
+      leavingUnstakingPeriod: '43,200'
+    },
+    '1'
+  ]
+]
+? Tx fee of 160.9597 mJOY will be deduced from you account, do you confirm the transfer? Yes
+Extrinsic successful!
+Opening with id 2 successfully created!
+2
+Done in 495.45s.
 
 ```
-
-
-
-
 
 ## Increase the stake :white_check_mark: 
 
